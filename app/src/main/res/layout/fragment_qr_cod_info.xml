@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".QrCodInfoFragment">
+<TextView
+    android:layout_marginTop="16sp"
+    android:layout_marginStart="16sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Shaxs"
+    android:textSize="12sp"
+
+    />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Muhiddinova Buzahro"
+        />
+    <TextView
+
+        android:layout_marginTop="24sp"
+        android:layout_marginStart="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sana"
+        android:textSize="12sp"
+
+        />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="11 yan 2021"
+        />
+
+    <TextView
+        android:layout_marginTop="24sp"
+        android:layout_marginStart="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sana"
+        android:textSize="12sp"
+
+        />
+    <EditText
+
+        android:pointerIcon="arrow"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16dp"
+        android:hint="  so'm"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_reg"
+        />
+    <LinearLayout
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:weightSum="2"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_weight="1"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="Qarzni qabul qilish"
+       />
+    <RadioButton
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Qarz berish"
+        />
+</LinearLayout>
+</LinearLayout>

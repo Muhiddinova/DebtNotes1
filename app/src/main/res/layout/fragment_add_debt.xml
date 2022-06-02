@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+    <data>
+
+        <variable
+            name="addViewModel"
+            type="uz.bmb.debtnotes.ui.add.AddDebtsFragmentViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFF5FF"
+        android:orientation="vertical"
+        android:paddingBottom="54dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:text="Shaxs"
+            android:textSize="12sp"
+
+            />
+
+        <EditText
+
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_reg"
+            android:hint="FIO"
+            android:paddingStart="8dp"
+            android:pointerIcon="arrow"
+            android:text="@={addViewModel.userName}"
+            android:textSize="12sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:text="@string/phone_number"
+            android:textSize="12sp"
+
+            />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_reg"
+            android:hint="@string/phone_number"
+            android:paddingStart="8sp"
+            android:text="@={addViewModel.phoneNumber}"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:text="@string/address"
+            android:textSize="12sp"
+
+            />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_reg"
+            android:hint="@string/address"
+            android:paddingStart="8dp"
+            android:pointerIcon="arrow"
+            android:text="@={addViewModel.addresss}"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:text="@string/comment"
+            android:textSize="12sp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_reg"
+            android:hint="Izoh"
+            android:paddingStart="8dp"
+            android:pointerIcon="arrow"
+            android:text="@={addViewModel.comment}"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qarzni qabul qilish "
+                    android:textColor="#09870E" />
+
+                <RadioButton
+                    android:id="@+id/radioBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qarz berish"
+                    android:textColor="#CF0D0D" />
+            </RadioGroup>
+
+
+            <Button
+                android:text="qo'shish"
+                android:id="@+id/btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_weight="3"
+                android:background="@drawable/bg_continue"
+                android:src="@drawable/ic_baseline_check_24"
+                android:onClick="@{addViewModel::addButtonClicked}"
+                android:textColor="@color/white"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <EditText
+            android:textStyle="bold"
+            android:id="@+id/etDebt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_debt"
+            android:hint="Summani kiriting"
+            android:inputType="number"
+            android:paddingStart="8dp"
+            android:pointerIcon="arrow"
+            android:text="@={addViewModel.debtAmount}"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</layout>

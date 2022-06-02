@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="header"
+            type="uz.bmb.debtnotes.ui.registratsion.RegistrationViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="#1C3B70"
+    android:layout_height="match_parent">
+<TextView
+    
+    android:layout_marginTop="80dp"
+    android:layout_marginStart="16dp"
+    android:id="@+id/tx_username_header"
+    android:textColor="@color/white"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    />
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/tx_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id:"
+        app:layout_constraintTop_toBottomOf="@+id/tx_username_header"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/tx_id"
+        app:layout_constraintTop_toBottomOf="@+id/tx_username_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12345678"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

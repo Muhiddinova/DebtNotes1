@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="uz.bmb.debtnotes.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="uz.bmb.debtnotes.ui.registratsion.RegistrationFragment"
+        android:label="registration_fragment"
+        tools:layout="@layout/registration_fragment" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="uz.bmb.debtnotes.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/verificationCodeFragment"
+        android:name="uz.bmb.debtnotes.VerificationCodeFragment"
+        android:label="verification_code_fragment"
+        tools:layout="@layout/verification_code_fragment" />
+    <fragment
+        android:id="@+id/pinCodeWriteFragment"
+        android:name="uz.bmb.debtnotes.ui.registratsion.PinCodeWriteFragment"
+        android:label="fragment_pin_code_write"
+        tools:layout="@layout/fragment_pin_code_write" />
+    <fragment
+        android:id="@+id/homeFragment"
+
+        android:name="uz.bmb.debtnotes.ui.home.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/allDebtsFragment"
+        android:name="uz.bmb.debtnotes.ui.all.AllDebtsFragment"
+        android:label="fragment_all_debts"
+        tools:layout="@layout/fragment_all_debts" />
+    <fragment
+        android:id="@+id/debtsFragment"
+        android:name="uz.bmb.debtnotes.ui.debt.DebtsFragment"
+        android:label="fragment_debts"
+        tools:layout="@layout/fragment_debts" />
+    <fragment
+        android:id="@+id/feesFragment"
+        android:name="uz.bmb.debtnotes.ui.fees.FeesFragment"
+        android:label="fragment_fees"
+        tools:layout="@layout/fragment_fees" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="uz.bmb.debtnotes.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/myQrCodFragment"
+        android:name="uz.bmb.debtnotes.MyQrCodFragment"
+        android:label="fragment_my_qr_cod"
+        tools:layout="@layout/fragment_my_qr_cod" />
+    <fragment
+        android:id="@+id/lockingSystemFragment"
+        android:name="uz.bmb.debtnotes.LockingSystemFragment"
+        android:label="fragment_losking_system"
+        tools:layout="@layout/fragment_losking_system" />
+    <fragment
+        android:id="@+id/qrCodInfoFragment"
+        android:name="uz.bmb.debtnotes.QrCodInfoFragment"
+        android:label="fragment_qr_cod_info"
+        tools:layout="@layout/fragment_qr_cod_info" />
+    <fragment
+        android:id="@+id/qrCodScannerFragment"
+        android:name="uz.bmb.debtnotes.ui.qrCodScanner.QrCodScannerFragment"
+        android:label="fragment_qr_cod_scanner"
+        tools:layout="@layout/fragment_qr_cod_scanner" />
+    <fragment
+        android:id="@+id/qrGeneratorDisplayFragment"
+        android:name="uz.bmb.debtnotes.ui.generator.QrGeneratorDisplayFragment"
+        android:label="QrGeneratorDisplayFragment" />
+    <dialog
+        android:id="@+id/addDebtFragment"
+        android:name="uz.bmb.debtnotes.ui.add.AddDebtFragment"
+        android:label="AddDebtFragment" />
+
+</navigation>

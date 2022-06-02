@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">DebtNotes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">FIO</string>
+    <string name="phone_number">Telefon raqami</string>
+    <string name="continuee">Qr cod generate</string>
+    <string name="reg_text">Davom etish orqali Universal shartnoma bilan tanishganimni va uni qabul qilganimn tasdiqlayman</string>
+    <string name="verification_cod">Telefon raqamingizga tasdiqlash kod yuborildi</string>
+    <string name="code">Sms kod</string>
+    <string name="home">Uy</string>
+    <string name="debts">Qarzlar</string>
+    <string name="fees">Haqlar</string>
+    <string name="qr">QR kod skaner</string>
+    <string name="setting">Sozlash</string>
+    <string name="share">Ulashish</string>
+    <string name="tx_eksport">Hisobotlarni pdf shaklida exsport qilish</string>
+    <string name="eksport">Eksport</string>
+    <string name="currency">Valyuta kursi</string>
+    <string name="uzs">UZS</string>
+    <string name="change_language">Tilni o\'zgartirish</string>
+    <string name="clean">Tozalash</string>
+    <string name="address">Manzil</string>
+    <string name="comment">Izoh (majburiy emas)</string>
+    <string name="email">E-mail</string>
+    <string name="date">sana</string>
+    <string name="debt">Qarz</string>
+</resources>
